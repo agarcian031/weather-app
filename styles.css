@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
 
 * {
     margin: 0; 
@@ -14,7 +15,8 @@ body {
     flex-direction: column; 
     align-items: center; 
     background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143)); 
-    font-family: Amatic SC, sans-serif; 
+    font-family: Patrick Hand, sans-serif; 
+    font-weight: bold; 
     color: white; 
 }
 
