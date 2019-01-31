@@ -25,7 +25,8 @@ window.addEventListener('load', () => {
                 //Set DOM Elements from the API 
                 temperatureDegree.textContent = temperature;  
                 locationTimezone.textContent = data.timezone; 
-            
+                //set Icon 
+                setIcons(icon, document.querySelector('.icon')); 
             
             }); //end .then(data)
         }); 
@@ -33,7 +34,7 @@ window.addEventListener('load', () => {
     }//end if 
 
     function setIcons(icon, iconID) {
-        const skycons = new skycons({color: "white"}); 
+        const skycons = new Skycons({color: "white"}); 
         const currentIcon = icon.replace(/-/g, "_").toUpperCase(); 
         skycons.play(); 
         return skycons.set(iconID, Skycons[currentIcon]); 
