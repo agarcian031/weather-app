@@ -23,7 +23,8 @@ window.addEventListener('load', () => {
                 // console.log(data); 
                 const {temperature, summary, icon} = data.currently;
                 //Set DOM Elements from the API 
-                temperatureDegree.textContent = temperature;  
+                temperatureDegree.textContent = temperature; 
+                temperatureDescription.textContent = summary;  
                 locationTimezone.textContent = data.timezone; 
                 //set Icon 
                 setIcons(icon, document.querySelector('.icon')); 
